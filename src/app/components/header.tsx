@@ -3,7 +3,7 @@ import Clock from "@/app/components/clock";
 export default function Header() {
     return (
     <div>
-        <section className="flex text-sm font-[family-name:var(--font-arimo)] font-bold">
+        <section className="flex text-m font-[family-name:var(--font-arimo)] font-bold">
           <div className="flex-1 p-4 text-left">
             MODE
           </div>

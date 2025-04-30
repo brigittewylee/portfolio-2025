@@ -1,19 +1,20 @@
 "use client";
 import Header from "./components/header";
+import Landing from "./components/landing";
+import General from "./components/general";
 
 export default function HomePage() {
   return (
     <div>
-      <Header />
-      {/* landing */}
-      <section>
-        <div className="text-[180px] font-[family-name:var(--font-arimo)] font-bold text-right">
-          BRIGITTE LEE
-        </div>
-        <div className="text-9xl font-[family-name:var(--font-bodoni-moda)] font-bold italic">
-          PORTFOLIO &apos;25
-        </div>
-      </section>
+      <div>
+        <Header />
+      </div>
+      <div className="mt-40 mb-120">
+        <Landing />
+      </div>
+      <div>
+        <General />
+      </div>
 
     </div>
 
