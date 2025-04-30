@@ -2,6 +2,7 @@
 import Header from "./components/header";
 import Landing from "./components/landing";
 import General from "./components/general";
+import Work from "./components/work";
 
 export default function HomePage() {
   return (
@@ -12,8 +13,11 @@ export default function HomePage() {
       <div className="mt-40 mb-120">
         <Landing />
       </div>
-      <div>
+      <div className="mb-50">
         <General />
+      </div>
+      <div>
+        <Work />
       </div>
 
     </div>
