@@ -39,6 +39,13 @@ export default function Work() {
 				<p>INTERESTS</p>
 			</div>
         </div>
+		<div className="font-[family-name:var(--font-bodoni-moda)] font-thin not-italic text-[250px]">
+			&#43;
+			&#43;
+			<p className="text-3xl">UNDER CONSTRUCTION</p>
+			&#43;
+			&#43;
+		</div>
 
     </div>      
   );
