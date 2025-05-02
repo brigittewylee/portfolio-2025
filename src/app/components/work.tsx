@@ -39,12 +39,44 @@ export default function Work() {
 				<p>INTERESTS</p>
 			</div>
         </div>
-		<div className="font-[family-name:var(--font-bodoni-moda)] font-thin not-italic text-[250px]">
-			&#43;
-			&#43;
-			<p className="text-3xl">UNDER CONSTRUCTION</p>
-			&#43;
-			&#43;
+		<div className="mt-50">
+
+			<div className="flex justify-center font-[family-name:var(--font-arimo)] font-thin not-italic text-[250px]">
+				<div className="relative box-content bg-black border border-outline-black h-[450px] w-[320px] mr-2">
+					<span className="absolute font-[family-name:var(--font-bodoni-moda)] top-[-230] left-[-120]"> + </span>
+					<span className="absolute font-[family-name:var(--font-bodoni-moda)] bottom-[-250] left-[-120]"> + </span>
+					<p className="absolute text-[20px] text-custom-white bottom-10 left-10">
+						PERSONA-BASED <br />
+						CHATBOTS AS <br />
+						COGNITIVE <br />
+						STIMULATION FOR <br />
+						DEMENTIA PATIENTS <br />
+						(ONGOING) <br />
+					</p>
+				</div>
+				<div className="relative box-content bg-black border border-outline-black h-[450px] w-[320px] mr-2">
+					<p className="absolute text-[20px] text-custom-white bottom-10 left-10">
+						REMOTE <br />
+						PHOTOPLETHY-<br />
+						SMOGRAPHY <br />
+						SMART MIRROR <br />
+						FOR VITAL <br />
+						MONITORING <br />
+						(ONGOING)<br />
+					</p>
+				</div>
+				<div className="relative box-content bg-black border border-outline-black h-[450px] w-[320px] mr-2">
+					<span className="absolute font-[family-name:var(--font-bodoni-moda)] top-[-230] right-[-120]"> + </span>
+					<span className="absolute font-[family-name:var(--font-bodoni-moda)] bottom-[-250] right-[-120]"> + </span>
+					<p className="absolute text-[20px] text-custom-white bottom-10 left-10">
+						TOWARDS A <br />
+						PILOT FRAMEWORK <br />
+						FOR SYNTHETIC <br />
+						HEALTH DATA <br />
+						GENERATION <br />
+					</p>
+				</div>
+			</div>
 		</div>
 
     </div>      

@@ -18,10 +18,10 @@ export default function HomePage() {
       <div className="mb-50">
         <General />
       </div>
-      <div>
+      <div className="mb-70">
         <Work />
       </div>
-      <div>
+      <div className="mt-30">
         <Design />
       </div>
       <div className="mt-40">
