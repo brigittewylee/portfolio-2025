@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Landing from "./components/landing";
 import General from "./components/general";
 import Work from "./components/work";
+import Design from "./components/design";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,9 @@ export default function HomePage() {
       </div>
       <div>
         <Work />
+      </div>
+      <div>
+        <Design />
       </div>
 
     </div>
