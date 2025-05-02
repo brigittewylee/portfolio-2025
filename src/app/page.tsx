@@ -4,6 +4,7 @@ import Landing from "./components/landing";
 import General from "./components/general";
 import Work from "./components/work";
 import Design from "./components/design";
+import Contact from "./components/contact";
 
 export default function HomePage() {
   return (
@@ -22,6 +23,9 @@ export default function HomePage() {
       </div>
       <div>
         <Design />
+      </div>
+      <div className="mt-40">
+        <Contact />
       </div>
 
     </div>
