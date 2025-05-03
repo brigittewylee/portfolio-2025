@@ -21,17 +21,19 @@ export default function Header() {
 
     return (
     <div>
-        <section className="flex text-m font-[family-name:var(--font-arimo)] font-bold">
-          <div className="flex-1 p-4 text-left">
-			SITUATED IN <br />
-			TORONTO, ON
-          </div>
-          <div className="flex-1 p-4 text-center">
-		  	<Clock />
-          </div>
-          <button onClick={toggleModal} className="flex-1 p-4 text-right">
-            [NAVIGATE]
-          </button>
+		<section className="flex text-m font-[family-name:var(--font-arimo)] font-bold">
+			<div className="flex-1 p-4 text-left">
+				<div className="text-m/0">
+					<p>SITUATED IN</p>
+					<p className="mt-[-10px]">TORONTO, ON</p> 
+    			</div>
+          	</div>
+			<div className="flex-1 p-4 text-center flex items-center justify-center">
+				<Clock />
+			</div>
+			<button onClick={toggleModal} className="flex-1 p-4 text-right">
+				NAVIGATE
+			</button>
         </section>
 
 		{isModalOpen && (

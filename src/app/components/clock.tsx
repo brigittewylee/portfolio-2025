@@ -14,7 +14,7 @@ const Clock = () => {
     return () => clearInterval(intervalId);
   }, []);
 
-  return <span>{time} TORONTO</span>;
+  return <span>{time}</span>;
 };
 
 export default Clock;
