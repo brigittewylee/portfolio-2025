@@ -12,15 +12,15 @@ export default function Contact() {
                     and let&apos;s bring something thoughtful to life. <br />
                 </p>
                 <div className="text-custom-white text-sm">
-                    <div className="absolute left-5 bottom-5 flex space-x-7">
+                    <div className="absolute left-5 bottom-5 flex space-x-">
                         <span>GITHUB</span>
                         <span>LINKEDIN</span>
                         <span>EMAIL</span>
                         <span>CV</span>
                     </div>
-                    <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
+                    <a href="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
                         BACK TO TOP &#x2191;
-                    </div>
+                    </a>
                     <div className="absolute right-5 bottom-5 text-right">
                         BY BRIGITTE LEE &apos;25<br />
                         ALL RIGHTS RESERVED
