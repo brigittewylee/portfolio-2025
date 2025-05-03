@@ -8,27 +8,34 @@ import Contact from "./components/contact";
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <div>
         <Header />
       </div>
-      <div className="mt-40 mb-120">
-        <Landing />
-      </div>
-      <div className="mb-50">
-        <General />
-      </div>
-      <div className="mb-70">
-        <Work />
-      </div>
-      <div className="mt-30">
-        <Design />
-      </div>
-      <div className="mt-40">
-        <Contact />
-      </div>
 
+      <section id="landing" className="mt-40 mb-120 scroll-mt-28">
+        <Landing />
+      </section>
+
+      <section id="general" className="mb-50 scroll-mt-28">
+        <General />
+      </section>
+
+      <section id="work" className="mb-70 scroll-mt-28">
+        <Work />
+      </section>
+
+      <section id="design" className="mt-30 scroll-mt-28">
+        <Design />
+      </section>
+
+      <section id="contact" className="mt-40 scroll-mt-28">
+        <Contact />
+      </section>
     </div>
+  );
+}
+
 
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     //   <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -127,5 +134,5 @@ export default function HomePage() {
     //     </a>
     //   </footer>
     // </div>
-  );
-}
+//   );
+// }
