@@ -5,6 +5,7 @@ import { Bodoni_Moda, Bodoni_Moda_SC } from "next/font/google";
 import { Urbanist } from "next/font/google";
 
 
+
 import "./globals.css";
 
 const arimo = Arimo({

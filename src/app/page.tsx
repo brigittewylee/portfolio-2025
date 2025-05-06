@@ -5,27 +5,31 @@ import General from "./components/general";
 import Work from "./components/work";
 import Design from "./components/design";
 import Contact from "./components/contact";
+import Cursor from "./components/cursor";
+
 
 export default function HomePage() {
   return (
     <div className="scroll-smooth">
+      <Cursor />
+
       <div>
         <Header />
       </div>
 
-      <section id="landing" className="mt-40 mb-120 scroll-mt-28">
+      <section id="landing" className="mt-40 mb-120 scroll-mt-28 bg-custom-white">
         <Landing />
       </section>
 
-      <section id="general" className="mb-50 scroll-mt-28">
+      <section id="general" className="mb-50 scroll-mt-28 bg-custom-white">
         <General />
       </section>
 
-      <section id="work" className="mb-70 scroll-mt-28">
+      <section id="work" className="mb-70 scroll-mt-28 bg-custom-white">
         <Work />
       </section>
 
-      <section id="design" className="mt-30 scroll-mt-28">
+      <section id="design" className="mt-30 scroll-mt-28 bg-custom-white">
         <Design />
       </section>
 
