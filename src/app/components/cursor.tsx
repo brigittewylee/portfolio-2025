@@ -3,7 +3,6 @@ import gsap from "gsap";
 
 export default function Cursor() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isOverBlack, setIsOverBlack] = useState(false);
   const cursorRef = useRef<HTMLDivElement>(null);
   
 
@@ -51,10 +50,7 @@ export default function Cursor() {
   return (
     <div
 		ref={cursorRef}
-		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999] border border-2 border-custom-white"
-		style={{
-			backgroundColor: isOverBlack ? "#ececec" : "black",
-		}}
+		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999] border border-2 border-custom-white bg-black"
 	/>
   );
 }
