@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div className="font-[family-name:var(--font-arimo)] font-bold text-8xl text-center">
+        <div className="font-[family-name:var(--font-arimo)] bg-custom-white font-bold text-8xl text-center">
             GET IN TOUCH
             <div className="relative box-content bg-black h-[300px] w-full mr-2">
                 <p className="absolute text-[20px] text-right text-custom-white top-16 right-15">
