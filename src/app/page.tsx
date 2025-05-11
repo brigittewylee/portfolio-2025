@@ -6,7 +6,6 @@ import Work from "./components/work";
 import Design from "./components/design";
 import Contact from "./components/contact";
 import Cursor from "./components/cursor";
-import FadeSlideInSection from "./components/animation";
 
 
 
@@ -15,20 +14,16 @@ export default function HomePage() {
     <div className="scroll-smooth">
       <Cursor />
 
-      <div className="mb-50">
+      <div className="mb-60">
         <header className="w-full">
-          <FadeSlideInSection>
             <Header />
-          </FadeSlideInSection>
         </header>
       </div>
 
 
-      <FadeSlideInSection>
         <section id="landing" className="mb-120 scroll-mt-28 bg-custom-white">
           <Landing />
         </section>
-      </FadeSlideInSection>
 
       <section id="general" className="mb-50 bg-custom-white">
         <General />

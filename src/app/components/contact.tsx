@@ -1,5 +1,3 @@
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-
 export default function Contact() {
     return (
         <div className="font-[family-name:var(--font-arimo)] bg-custom-white font-bold text-8xl text-center">

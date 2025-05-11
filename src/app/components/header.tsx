@@ -7,7 +7,7 @@ export default function Header() {
     <div className="fixed w-screen top-0 z-[999]">
 		<section className="flex text-m font-[family-name:var(--font-arimo)] font-bold">
 			<div className="w-1/2 flex p-4 text-left gap-1">
-				<p>brigittelee</p>
+				<p>brigittelee &apos;25</p>
           	</div>
 			<div className="w-1/2 flex p-4 mr-4 gap-30 justify-end">
 				<div className="flex gap-0">
