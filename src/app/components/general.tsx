@@ -1,7 +1,33 @@
 
+import Image from 'next/image'; 
+
 export default function General() {
-  return (
+	const images = [
+		'/images/holiday.JPG',
+		'/images/pottery.JPG',
+		'/images/season.JPG',
+		'/images/baking.JPG',
+	  ];
+  	return (
     <div>
+		<div className="flex">
+			<div className="flex flex-wrap justify-between gap-2 px-4">
+			{images.map((src, index) => (
+			<div
+			key={index}
+			className="w-[calc(25%-0.5rem)] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105"
+			>
+				<Image
+				src={src}
+				alt={`Image ${index + 1}`}
+				width={400}
+				height={300}
+				className="w-full h-auto object-cover"
+				/>
+			</div>
+			))}
+			</div>
+		</div>
         <section className="flex flex-col font-[family-name:var(--font-arimo)] 
                             font-bold">
 			<div className="text-[150px] flex-1 p-4 text-left">

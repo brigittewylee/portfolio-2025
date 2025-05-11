@@ -13,7 +13,7 @@ export default function Cursor() {
 		if (cursorRef.current) {
 			gsap.to(cursorRef.current, {
 			x: e.clientX-15,
-			y: e.clientY-175,  
+			y: e.clientY-220,  
 			duration: 0.7,
 			ease: "power2.out",
 			});
