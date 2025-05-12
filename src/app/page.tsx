@@ -1,4 +1,6 @@
 "use client";
+import gsap from "gsap";
+import { useEffect, useState } from "react";
 import Header from "./components/header";
 import Landing from "./components/landing";
 import General from "./components/general";
@@ -6,13 +8,14 @@ import Work from "./components/work";
 import Design from "./components/design";
 import Contact from "./components/contact";
 import Cursor from "./components/cursor";
-
-
+import ScrollAnimations from "./scrollAnimations";
 
 export default function HomePage() {
+
   return (
     <div className="scroll-smooth">
       <Cursor />
+      <ScrollAnimations />
 
       <div className="mb-60">
         <header className="w-full">
@@ -20,24 +23,23 @@ export default function HomePage() {
         </header>
       </div>
 
-
-        <section id="landing" className="mb-120 scroll-mt-28 bg-custom-white">
+        <section id="landing" className="box mb-120 scroll-mt-28 bg-custom-white">
           <Landing />
         </section>
 
-      <section id="general" className="mb-50 bg-custom-white">
+      <section id="general" className="box mb-50 bg-custom-white">
         <General />
       </section>
 
-      <section id="work" className="mb-100 bg-custom-white">
+      <section id="work" className="box mb-100 bg-custom-white">
         <Work />
       </section>
 
-      <section id="site-design" className="mb-40 bg-custom-white">
+      <section id="site-design" className="box mb-40 bg-custom-white">
         <Design />
       </section>
 
-      <section id="contact">
+      <section id="contact" className="box">
         <Contact />
       </section>
     </div>

@@ -1,15 +1,20 @@
 export default function Work() {
   return (
-    <div className="italic font-bold">
-        <p className="text-[80px] font-[family-name:var(--font-bodoni-moda)] 
-                        text-right">
-          ACCESSIBLE 
-        	<span className="text-[90px] font-[family-name:var(--font-arimo)]"> TECHNOLOGY</span>
-        </p>
-        <p className="text-[80px]/1 font-[family-name:var(--font-bodoni-moda)]">
-          USER CENTERED 
-        	<span className="text-[90px] font-[family-name:var(--font-arimo)]"> DESIGN</span>
-        </p>
+    <div className="italic font-bold w-full overflow-hidden">
+        <div className="flex items-center marquee-right">
+			<span className="inline text-[80px] font-[family-name:var(--font-bodoni-moda)]"> ACCESSIBLE </span>
+        	<span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> TECHNOLOGY</span>
+			<span className="inline text-[80px] font-[family-name:var(--font-bodoni-moda)]"> ACCESSIBLE </span>
+        	<span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> TECHNOLOGY</span>
+        </div>
+
+		<div className="flex items-center whitespace-nowrap marquee-left text-right">
+			<span className="inline text-[80px] font-[family-name:var(--font-bodoni-moda)]">USER-CENTERED </span>
+        	<span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> DESIGN</span>
+			<span className="inline text-[80px] font-[family-name:var(--font-bodoni-moda)]">USER-CENTERED </span>
+        	<span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> DESIGN</span>
+        </div>
+		
     	<div className="flex font-[family-name:var(--font-arimo)] not-italic justify-end items-end">
 			<div className="mt-30 pr-70 text-[140px]/27 text-left">
 				<p className="pt-70 pl-10">PROJECT</p>

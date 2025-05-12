@@ -28,15 +28,14 @@ export default function General() {
 			))}
 			</div>
 		</div>
-        <section className="flex flex-col font-[family-name:var(--font-arimo)] 
-                            font-bold">
-			<div className="text-[150px] flex-1 p-4 text-left">
+        <section className="flex flex-col font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
+			<div className="text-[150px] flex-1 p-4 text-left fade-up">
 				GENERAL +
 			</div>
 			<div className="flex flex-row">
 				<div className="w-1/2"></div>
 				<div className="w-1/2 text-[25.6px]/7">
-				<div className="p-1 text-right font-semibold">
+				<div className="p-1 text-right font-semibold fade-up">
 					<p className="text-left">I&apos;M BRIGITTE, A MSC HEALTH SCIENCE STUDENT AT UW.</p>
 					<p className="text-left">MY WORK LIVES AT THE 
 						<span className="font-bold italic"> INTERSECTION. </span>
