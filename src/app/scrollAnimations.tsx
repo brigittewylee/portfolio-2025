@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ScrollAnimations() {
   useEffect(() => {
-    const texts = document.querySelectorAll(".animate-text");
 
+    const texts = document.querySelectorAll(".animate-text");
     texts.forEach((el) => {
       const split = new SplitType(el as HTMLElement, { types: "words,chars" });
 
@@ -27,18 +27,17 @@ export default function ScrollAnimations() {
     });
 
     const fadeUps = document.querySelectorAll(".fade-up");
-
     fadeUps.forEach((el, index) => {
         gsap.fromTo(
           el,
           {
             opacity: 0,
-            y: 40,
+            y: 50,
           },
           {
             scrollTrigger: {
               trigger: el,
-              start: "top 70%",
+              start: "top 90%",
               toggleActions: "play none none none",
               once: true,
             },
@@ -52,7 +51,6 @@ export default function ScrollAnimations() {
       });
 
     const marquees_left = document.querySelectorAll(".marquee-left");
-
     marquees_left.forEach((el) => {
       gsap.to(el, {
         xPercent: -50,
@@ -67,7 +65,6 @@ export default function ScrollAnimations() {
     });
 
     const marquees_right = document.querySelectorAll(".marquee-right");
-
     marquees_right.forEach((el) => {
       gsap.to(el, {
         xPercent: 50,
@@ -83,6 +80,8 @@ export default function ScrollAnimations() {
 
     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
   }, []);
+
+  
 
   return null;
 }

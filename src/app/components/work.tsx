@@ -19,6 +19,10 @@ export default function Work() {
 			<div className="mt-30 pr-70 text-[140px]/27 text-left">
 				<p className="pt-70 pl-10">PROJECT</p>
 				<p className="font-[family-name:var(--font-bodoni-moda)]">GALLERY</p>
+			</div>			
+			<div className="absolute pr-18 pb-66 rotate-90 text-[55px]/13">
+				<p className="">RESEARCH</p>
+				<p>INTERESTS</p>
 			</div>
 			<div className="text-right pr-30 pb-15 text-[24px]/6.5">
 				<p>HUMAN-COMPUTER </p>
@@ -39,10 +43,7 @@ export default function Work() {
 				<p>AND DESIGN//</p>
 
 			</div>
-			<div className="absolute pr-18 pb-66 rotate-90 text-[55px]/13">
-				<p className="">RESEARCH</p>
-				<p>INTERESTS</p>
-			</div>
+
         </div>
 		<div className="mt-50">
 
