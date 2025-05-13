@@ -1,6 +1,6 @@
 "use client";
 import gsap from "gsap";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef} from "react";
 import Header from "./components/header";
 import Landing from "./components/landing";
 import General from "./components/general";
@@ -11,19 +11,20 @@ import Cursor from "./components/cursor";
 import ScrollAnimations from "./scrollAnimations";
 
 export default function HomePage() {
+  const headerRef = useRef<HTMLDivElement>(null); 
 
   return (
     <div className="scroll-smooth">
-      <Cursor />
+      <Cursor headerRef={headerRef}/>
       <ScrollAnimations />
 
       <div className="mb-60">
         <header className="w-full">
-            <Header />
+            <Header headerRef={headerRef}/>
         </header>
       </div>
 
-        <section id="landing" className="box mb-120 scroll-mt-28 bg-custom-white">
+        <section id="landing" className="box mb-70 scroll-mt-28 bg-custom-white">
           <Landing />
         </section>
 

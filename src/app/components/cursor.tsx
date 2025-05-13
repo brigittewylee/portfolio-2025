@@ -1,11 +1,15 @@
 import { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
+import { rgba } from "framer-motion";
 
-export default function Cursor() {
+type CursorProps = {
+  headerRef: React.RefObject<HTMLDivElement>;
+};
+
+export default function Cursor({headerRef}: CursorProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const cursorRef = useRef<HTMLDivElement>(null);
   
-
   useEffect(() => {
     const move = (e: MouseEvent) => {
 		setPosition({ x: e.clientX, y: e.clientY });
@@ -36,16 +40,46 @@ export default function Cursor() {
         });
       }
     };
+    
+    const handleHover = (e: MouseEvent) => {
+      if (!cursorRef.current || !headerRef.current) return;
       
+      const rect = headerRef.current.getBoundingClientRect();
+      const inHeader =
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom &&
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right;
+
+      if (inHeader) {
+        gsap.to(cursorRef.current, {
+          scale: 0.3, 
+          duration: 0.3,
+          backgroundColor: "rgba(0,0,0,0)",
+          borderColor: "rgb(0,0,0)",
+          borderWidth: "8px",
+        });
+      } else {
+        gsap.to(cursorRef.current, {
+          scale: 1,  
+          duration: 0.3,
+          backgroundColor: "rgb(0,0,0)",
+          borderColor: "#ececec",
+          borderWidth: "4px",
+        });
+      }
+    };
 
     document.addEventListener("mousemove", move);
     document.addEventListener("mousedown", click);
+    document.addEventListener("mousemove", handleHover); 
 
     return () => {
 		document.removeEventListener("mousemove", move);
 		document.removeEventListener("mousedown", click);
+    document.removeEventListener("mousemove", handleHover);
 		};
-	}, []);
+	}, [headerRef]);
 
   return (
     <div

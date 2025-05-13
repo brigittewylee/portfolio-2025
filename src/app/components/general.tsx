@@ -8,7 +8,8 @@ export default function General() {
 		'/images/season.JPG',
 		'/images/baking.JPG',
 	  ];
-  	return (
+	
+  return (
     <div>
 		<div className="flex">
 			<div className="flex flex-wrap justify-between gap-2 px-4">
