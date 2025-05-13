@@ -21,20 +21,20 @@ export default function Cursor() {
     };
 
     const click = () => {
-        if (cursorRef.current) {
+      if (cursorRef.current) {
+        gsap.to(cursorRef.current, {
+          scale: 2,
+          duration: 0.25,
+          ease: "power3.out",
+          onComplete: () => {
             gsap.to(cursorRef.current, {
-                scale: 2,
-                duration: 0.25,
-                ease: "power3.out",
-                onComplete: () => {
-                gsap.to(cursorRef.current, {
-                    scale: 1,
-                    duration: 0.25,
-                    ease: "power3.out",
-                });
-            },
+              scale: 1,
+              duration: 0.25,
+              ease: "power3.out",
+            });
+          },
         });
-        }
+      }
     };
       
 
@@ -50,7 +50,6 @@ export default function Cursor() {
   return (
     <div
 		ref={cursorRef}
-		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999] border border-2 border-custom-white bg-black"
-	/>
+		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999] border border-2 border-custom-white bg-black"/>
   );
 }

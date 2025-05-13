@@ -10,6 +10,6 @@ export default function Landing() {
 		</p>
 	  </div>
 	);
-  }
+}
   
   

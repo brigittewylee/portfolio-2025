@@ -63,4 +63,4 @@ export default function General() {
 			</section>
 		</div>
 	)
-	};
+};
