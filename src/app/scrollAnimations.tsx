@@ -20,7 +20,7 @@ export default function ScrollAnimations() {
         },
         opacity: 0,
         y: 10,
-        stagger: 0.03,
+        stagger: 0.05,
         ease: "power3.out",
         duration: 0.2,
       });

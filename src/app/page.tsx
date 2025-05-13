@@ -12,19 +12,20 @@ import ScrollAnimations from "./scrollAnimations";
 
 export default function HomePage() {
   const headerRef = useRef<HTMLDivElement>(null); 
+  const contactRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className="scroll-smooth">
-      <Cursor headerRef={headerRef}/>
+      <Cursor headerRef={headerRef} contactRef={contactRef}/>
       <ScrollAnimations />
 
-      <div className="mb-60">
+      <div>
         <header className="w-full">
             <Header headerRef={headerRef}/>
         </header>
       </div>
 
-        <section id="landing" className="box mb-70 scroll-mt-28 bg-custom-white">
+        <section id="landing" className="box mt-60 mb-70 scroll-mt-28 bg-custom-white">
           <Landing />
         </section>
 
@@ -41,7 +42,7 @@ export default function HomePage() {
       </section>
 
       <section id="contact" className="box">
-        <Contact />
+        <Contact contactRef={contactRef}/>
       </section>
     </div>
   );

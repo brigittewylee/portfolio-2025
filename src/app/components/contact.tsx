@@ -1,6 +1,13 @@
-export default function Contact() {
+import React from "react";
+
+type ContactProps = {
+  contactRef: React.RefObject<HTMLDivElement>;
+};
+
+export default function Contact({contactRef}: ContactProps) {
   return (
-    <div className="font-[family-name:var(--font-arimo)] bg-custom-white font-bold text-8xl text-center">
+    <div ref={contactRef}
+        className="font-[family-name:var(--font-arimo)] bg-custom-white font-bold text-8xl text-center">
       GET IN TOUCH
       <div className="relative box-content bg-black h-[300px] w-full mr-2">
         <p className="absolute text-[20px] text-right text-custom-white top-16 right-15">
@@ -12,7 +19,7 @@ export default function Contact() {
             and let&apos;s bring something thoughtful to life. <br />
         </p>
         <div className="text-custom-white text-sm">
-            <div className="absolute left-5 bottom-5 flex space-x-">
+            <div className="absolute left-5 bottom-5 flex gap-5">
                 <span>GITHUB</span>
                 <span>LINKEDIN</span>
                 <span>EMAIL</span>
