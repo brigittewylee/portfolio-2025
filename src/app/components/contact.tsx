@@ -20,10 +20,29 @@ export default function Contact({contactRef}: ContactProps) {
         </p>
         <div className="text-custom-white text-sm">
             <div className="absolute left-5 bottom-5 flex gap-5">
-                <span>GITHUB</span>
-                <span>LINKEDIN</span>
-                <span>EMAIL</span>
-                <span>CV</span>
+                <a href="https://github.com/brigittewylee"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">
+                  GITHUB
+                </a>
+                <a href="https://www.linkedin.com/in/brigitteleewy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">
+                  LINKEDIN
+                </a>
+                <a href="mailto:brigitte.lee@uwaterloo.ca"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">
+                  EMAIL
+                </a>
+                <a href="PLACEHOLDER"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">                  CV
+                </a>
             </div>
             <a href="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
                 BACK TO TOP &#x2191;
