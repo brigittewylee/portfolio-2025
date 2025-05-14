@@ -25,19 +25,19 @@ export default function HomePage() {
         </header>
       </div>
 
-        <section id="landing" className="box mt-60 mb-70 scroll-mt-28 bg-custom-white">
+        <section id="landing" className="box mt-60 mb-70 scroll-mt-28">
           <Landing />
         </section>
 
-      <section id="general" className="box mb-50 bg-custom-white">
+      <section id="general" className="box mb-25">
         <General />
       </section>
 
-      <section id="work" className="box mb-100 bg-custom-white">
+      <section id="work" className="box mb-35">
         <Work />
       </section>
 
-      <section id="site-design" className="box mb-40 bg-custom-white">
+      <section id="site-design" className="box mb-40">
         <Design />
       </section>
 

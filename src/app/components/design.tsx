@@ -1,12 +1,10 @@
 export default function Design() {
   return(
     <div className="font-[family-name:var(--font-bodoni-moda)] text-[103px]/20 font-bold italic" >
-      <div className="text-right pr-2">
-        DIGITAL PORTFOLIO
+      <div className="text-left pl-5">
+        PORTFOLIO DESIGN
       </div>
-      <div className="text-custom-white drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
-        DIGITAL PORTFOLIO
-      </div>
+
       <div className="flex mt-20 font-[family-name:var(--font-arimo)] text-3xl not-italic">
         <div className="flex-1 pl-20">
           <div className="text-7xl">FONTS</div>

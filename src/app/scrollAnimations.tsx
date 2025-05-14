@@ -37,7 +37,7 @@ export default function ScrollAnimations() {
           {
             scrollTrigger: {
               trigger: el,
-              start: "top 90%",
+              start: "top 95%",
               toggleActions: "play none none none",
               once: true,
             },
@@ -45,7 +45,7 @@ export default function ScrollAnimations() {
             y: 0,
             duration: 1,
             ease: "power3.out",
-            delay: index * 0.2,
+            delay: index * 0.09,
           }
         );
       });
