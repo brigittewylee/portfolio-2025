@@ -37,13 +37,16 @@ export default function HomePage() {
         <Work />
       </section>
 
-      <section id="site-design" className="box mb-40">
-        <Design />
-      </section>
+      <div className="transition-colors duration-100 bg-black">
+        <section id="site-design" className="box mb-40">
+          <Design />
+        </section>
 
-      <section id="contact" className="box">
-        <Contact contactRef={contactRef}/>
-      </section>
+        <section id="contact" className="box">
+          <Contact contactRef={contactRef}/>
+        </section>
+      </div>
+
     </div>
   );
 }

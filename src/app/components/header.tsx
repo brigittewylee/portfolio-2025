@@ -7,9 +7,8 @@ type HeaderProps = {
 
 export default function Header({headerRef}: HeaderProps) {
   return (
-    
     <div ref={headerRef}
-        className="fixed top-0 right-0 left-0 w-full h-30 z-50 backdrop-blur-md bg-white/55 [mask-image:linear-gradient(to_bottom,black,transparent)] [mask-size:100%_100%]">
+        className="fixed top-0 right-0 left-0 w-full h-23 z-50 backdrop-blur-md bg-white/100 [mask-image:linear-gradient(to_bottom,black,transparent)] [mask-size:100%_100%]">
 		<section className="flex text-m font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
 			<div className="w-1/2 flex p-4 text-left gap-1 fade-up">
 				<p>brigittelee &apos;25</p>

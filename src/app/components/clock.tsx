@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 const Clock = () => {
@@ -30,7 +29,7 @@ const Clock = () => {
   }, []);
 
   return (
-    <>
+    <div>
       <style jsx>{`
         .colon {
           animation: fadeBlink 1s infinite ease-in-out;
@@ -53,7 +52,7 @@ const Clock = () => {
         </span>
         <span className="text-base">{ampm}</span>
       </div>
-    </>
+    </div>
   );
 };
 

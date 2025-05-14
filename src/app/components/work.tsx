@@ -1,7 +1,7 @@
 export default function Work() {
   return (
     <div className="italic font-bold w-full overflow-hidden fade-up">
-      <div className="flex items-center left-1/2 -translate-x-1/2 whitespace-nowrap marquee-right">
+      <div className="flex items-center left-1/2 -translate-x-1/2 whitespace-nowrap marquee-right drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
         <span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> TECHNOLOGY&#x2733;</span>
 			  <span className="inline text-[80px] font-[family-name:var(--font-bodoni-moda)]"> ACCESSIBLE </span>
         <span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> TECHNOLOGY&#x2733;</span>
@@ -9,7 +9,7 @@ export default function Work() {
         <span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> TECHNOLOGY&#x2733;</span>
       </div>
 
-		  <div className="flex items-center whitespace-nowrap marquee-left">
+		  <div className="flex items-center whitespace-nowrap marquee-left drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
         <span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> DESIGN&#x2733;</span>
 			  <span className="inline text-[80px] font-[family-name:var(--font-bodoni-moda)]">USER-CENTERED </span>
         <span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> DESIGN&#x2733;</span>
@@ -17,7 +17,7 @@ export default function Work() {
         <span className="inline text-[90px] font-[family-name:var(--font-arimo)]"> DESIGN&#x2733;</span>
       </div>
 		
-    	<div className="flex font-[family-name:var(--font-arimo)] not-italic justify-end items-end">
+    	<div className="flex font-[family-name:var(--font-arimo)] not-italic justify-end items-end drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
         <div className="pr-70 text-[140px]/27 text-left fade-up">
           <p className="pt-70 pl-10">PROJECT</p>
           <p className="font-[family-name:var(--font-bodoni-moda)]">GALLERY</p>
@@ -28,36 +28,39 @@ export default function Work() {
           <p>INTERESTS</p>
         </div>
 
-        <div className="text-right pr-30 pb-15 text-[24px]/6.5">
-          <div className="fade-up">
-            <p>HUMAN-COMPUTER </p>
-            <p className="text-left">INTERACTION//</p>
-          </div>
+        <div className="drop-shadow-[0px_0px_0.3px_rgba(0,0,0,1)]">
+          <div className="text-right pr-30 pb-15 text-[24px]/6.5">
+            <div className="fade-up">
+              <p>HUMAN-COMPUTER </p>
+              <p className="text-left">INTERACTION//</p>
+            </div>
 
-          <div className="fade-up">
-            <p>ARTIFICIAL</p>
-            <p>INTELLIGENCE//</p>
-          </div>
+            <div className="fade-up">
+              <p>ARTIFICIAL</p>
+              <p>INTELLIGENCE//</p>
+            </div>
 
-          <div className="text-left fade-up">
-            <p>AFFECTIVE </p>
-            <p>COMPUTING//</p>
-          </div>
+            <div className="text-left fade-up">
+              <p>AFFECTIVE </p>
+              <p>COMPUTING//</p>
+            </div>
 
-          <div className="fade-up">
-            <p>HEALTH</p>
-            <p>INFORMATICS//</p>
-          </div>
+            <div className="fade-up">
+              <p>HEALTH</p>
+              <p>INFORMATICS//</p>
+            </div>
 
-          <div className="text-left fade-up">
-            <p>COGNITIVE </p>
-            <p>IMPAIRMENTS//</p>
-          </div>
+            <div className="text-left fade-up">
+              <p>COGNITIVE </p>
+              <p>IMPAIRMENTS//</p>
+            </div>
 
-          <div className="fade-up">
-            <p>USER INTERFACE</p>
-            <p>AND DESIGN//</p>
-          </div>
+            <div className="fade-up">
+              <p>USER INTERFACE</p>
+              <p>AND DESIGN//</p>
+            </div>
+        </div>
+
         </div>
       </div>
       <div className="mt-30 mb-30 border-outline-black fade-up">

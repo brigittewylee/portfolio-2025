@@ -10,19 +10,20 @@ export default function Cursor({headerRef, contactRef}: CursorProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const cursorRef = useRef<HTMLDivElement>(null);
   const baseScale = useRef(1);
+  
 
   useEffect(() => {
     const move = (e: MouseEvent) => {
 		setPosition({ x: e.clientX, y: e.clientY });
 
-		if (cursorRef.current) {
-			gsap.to(cursorRef.current, {
-			x: e.clientX-15,
-			y: e.clientY-255,  
-			duration: 0.7,
-			ease: "power2.out",
-			});
-		}
+      if (cursorRef.current) {
+        gsap.to(cursorRef.current, {
+        x: e.clientX-15,
+        y: e.clientY-255,  
+        duration: 0.7,
+        ease: "power2.out",
+        });
+      }
     };
 
     const click = () => {
@@ -108,6 +109,7 @@ export default function Cursor({headerRef, contactRef}: CursorProps) {
   return (
     <div
 		ref={cursorRef}
-		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999] border border-2 border-custom-white bg-black"/>
+		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999] border border-2 border-custom-white bg-black">
+    </div>
   );
 }

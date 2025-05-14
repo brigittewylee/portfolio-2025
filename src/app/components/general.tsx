@@ -1,33 +1,36 @@
-
 import Image from 'next/image'; 
+import { useState, useRef } from 'react';
 
 export default function General() {
-	const images = [
-		'/images/holiday.JPG',
-		'/images/pottery.JPG',
-		'/images/season.JPG',
-		'/images/baking.JPG',
-	  ];
-	
-  return (
+	return(
     <div>
-		<div className="flex">
-			<div className="flex flex-wrap justify-between gap-2 px-4">
-			{images.map((src, index) => (
-			<div
-			key={index}
-			className="w-[calc(25%-0.5rem)] overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105"
-			>
-				<Image
-				src={src}
-				alt={`Image ${index + 1}`}
-				width={400}
-				height={300}
-				className="w-full h-auto object-cover"
-				/>
-			</div>
-			))}
-			</div>
+		<div className="flex pl-5 pr-5 w-auto overflow-hidden gap-1 rounded-xl">
+			<Image src="/images/holiday.JPG" 
+					alt="favourite holiday"
+					width={200}
+					height={400}
+					className="flex-1 fade-up">
+			</Image>
+			<Image src="/images/pottery.JPG"
+					alt="hobby"
+					width={200}
+					height={400}
+					className="flex-1 fade-up">
+			</Image>
+			<Image src="/images/season.JPG"
+					alt="season"
+					width={200}
+					height={400}
+					className="flex-1 fade-up">
+			</Image>
+			<Image src="/images/baking.JPG"
+					alt="hobby"
+					width={200}
+					height={400}
+					className="flex-1 fade-up">
+			</Image>
+
+
 		</div>
         <section className="flex flex-col font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
 			<div className="text-[150px] flex-1 p-4 text-left fade-up">
