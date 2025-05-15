@@ -7,16 +7,13 @@ type ContactProps = {
 export default function Contact({contactRef}: ContactProps) {
   return (
     <div ref={contactRef}
-        className="font-[family-name:var(--font-arimo)] bg-black font-bold text-custom-white text-8xl text-center">
-      GET IN TOUCH
-      <div className="relative box-content bg-black h-[300px] w-full mr-2">
-        <p className="absolute text-[20px] text-right text-custom-white top-16 right-15">
-            <span className="font-[family-name:var(--font-bodoni-moda)] text-[30px]">
-                LET&apos;S MAKE SOMETHING <span className="italic">MEANINGFUL</span> 
-            </span>  <br />
-            I&apos;m always open to new ideas, collaborations, or any <br />
-            other questions you may have—feel free to reach out  <br />
-            and let&apos;s bring something thoughtful to life. <br />
+      className="font-[family-name:var(--font-arimo)] font-bold text-custom-white">
+        <hr className="h-px mx-auto w-[95%] align-center bg-custom-white mb-[4rem]"></hr>
+      <div className="text-9xl text-left fade-up pu-[5rem] pl-[2rem] fade-up">GET IN TOUCH:</div>
+      <div className="relative box-content h-[150px] w-full mr-2">
+        <p className="pl-[2rem] text-xl text-left text-custom-white fade-up">
+            I&apos;m always open to new ideas, collaborations, or any 
+            other questions you may have—feel free to reach out!  <br />
         </p>
         <div className="text-custom-white text-sm">
             <div className="absolute left-5 bottom-5 flex gap-5">
@@ -41,11 +38,12 @@ export default function Contact({contactRef}: ContactProps) {
                 <a href="PLACEHOLDER"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">                  CV
+                  className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">
+                  READ.CV [WIP]
                 </a>
             </div>
-            <a href="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
-                BACK TO TOP &#x2191;
+            <a href="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.05]">
+                BACK TO TOP &#x2963;
             </a>
             <div className="absolute right-5 bottom-5 text-right">
                 BY BRIGITTE LEE &apos;25<br />
