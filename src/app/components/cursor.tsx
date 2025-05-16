@@ -3,10 +3,11 @@ import gsap from "gsap";
 
 type CursorProps = {
   headerRef: React.RefObject<HTMLDivElement>;
-  contactRef: React.RefObject<HTMLDivElement>;
+  footerRef: React.RefObject<HTMLDivElement>;
+  variant?: "default" | "alt";
 };
 
-export default function Cursor({headerRef, contactRef}: CursorProps) {
+export default function Cursor({headerRef, footerRef}: CursorProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const cursorRef = useRef<HTMLDivElement>(null);
   const baseScale = useRef(1);
@@ -48,7 +49,7 @@ export default function Cursor({headerRef, contactRef}: CursorProps) {
       if (!cursorRef.current) return;
     
       const headerRect = headerRef.current?.getBoundingClientRect();
-      const contactRect = contactRef.current?.getBoundingClientRect();
+      const footerRect = footerRef.current?.getBoundingClientRect();
       
       const inHeader =
         headerRect &&
@@ -57,14 +58,14 @@ export default function Cursor({headerRef, contactRef}: CursorProps) {
         e.clientX >= headerRect.left &&
         e.clientX <= headerRect.right;
 
-      const inContact =
-        contactRect &&
-        e.clientY >= contactRect.top &&
-        e.clientY <= contactRect.bottom &&
-        e.clientX >= contactRect.left &&
-        e.clientX <= contactRect.right;
+      const inFooter =
+      footerRect &&
+        e.clientY >= footerRect.top &&
+        e.clientY <= footerRect.bottom &&
+        e.clientX >= footerRect.left &&
+        e.clientX <= footerRect.right;
 
-      console.log({ inHeader, inContact });
+      console.log({ inHeader, inFooter });
       if (inHeader) {
         baseScale.current = 0.3;
         gsap.to(cursorRef.current, {
@@ -74,7 +75,7 @@ export default function Cursor({headerRef, contactRef}: CursorProps) {
           borderColor: "rgb(0,0,0)",
           borderWidth: "4px",
         });
-      } else if (inContact) {
+      } else if (inFooter) {
         baseScale.current = 0.3;
         gsap.to(cursorRef.current, {
           scale: 0.3, 
@@ -104,7 +105,7 @@ export default function Cursor({headerRef, contactRef}: CursorProps) {
 		document.removeEventListener("mousedown", click);
     document.removeEventListener("mousemove", handleHover);
 		};
-	}, [headerRef, contactRef]);
+	}, [headerRef, footerRef]);
 
   return (
     <div
