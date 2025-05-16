@@ -1,14 +1,22 @@
-export default function Design() {
+import React from "react";
+
+type DesignProp = {
+  designRef: React.RefObject<HTMLDivElement>
+  designHeadRef: React.RefObject<HTMLDivElement>
+};
+
+export default function Design({ designRef, designHeadRef }: DesignProp) {
   return(
-    <section className="black-bg">
-      {/* Sticky Header */}
-      <div className="sticky top-0 bg-custom-white z-0 font-[family-name:var(--font-bodoni-moda)] text-[103px]/20 font-bold pt-30 pb-20 px-5">
+    <section>
+      <div ref={designHeadRef}
+            className="sticky top-0 bg-custom-white z-0 font-[family-name:var(--font-bodoni-moda)] text-[103px]/20 font-bold pt-30 pb-20 px-5">
           <div className="drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
           PORTFOLIO DESIGN
           </div>
       </div>
 
-      <div className="inset-0 z-10 h-auto w-full text-custom-white">
+      <div ref={designRef} 
+            className="bg-black inset-0 z-10 h-auto w-full text-custom-white">
         <div className="flex flex-col">
           <div className="bg-black pt-[8rem] pb-[3rem] font-[family-name:var(--font-arimo)] text-3xl not-italic drop-shadow-[0px_0px_0.5px_rgba(0,0,0,1)]">
             <div className="fade-up flex">
