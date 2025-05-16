@@ -69,7 +69,7 @@ export default function HomePage() {
         </header>
       </div>
 
-        <section id="landing" className="box mt-60 mb-70 scroll-mt-28">
+        <section id="landing" className="box mt-60 mb-70 snap-start">
           <Landing />
         </section>
 

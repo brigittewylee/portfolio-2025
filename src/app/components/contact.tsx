@@ -1,4 +1,8 @@
 import React from "react";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 type ContactProps = {
   contactRef: React.RefObject<HTMLDivElement>;
@@ -6,6 +10,22 @@ type ContactProps = {
 };
 
 export default function Contact({contactRef, footerRef}: ContactProps) {
+  useEffect(() => {
+    const button = document.querySelector('button[data-target="#landing"]');
+    if (!button) return;
+  
+    const handleClick = () => {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+          y: 0,
+          offsetY: -23,
+        },
+        ease: "power2.out",
+      });
+    };
+  });
+
   return (
     <div ref={contactRef} className="font-[family-name:var(--font-arimo)] font-bold text-custom-white">
         <hr className="h-[2px] mx-auto w-[95%] align-center bg-custom-white mb-[1rem] fade-up"></hr>
@@ -43,9 +63,11 @@ export default function Contact({contactRef, footerRef}: ContactProps) {
                   READ.CV [WIP]
                 </a>
             </div>
-            <a href="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.1]">
-                BACK TO TOP &#x2963;
-            </a>
+            <nav>
+              <button data-target="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.1] scroll-mt-[60px]">
+                  BACK TO TOP &#x2963;
+              </button>
+            </nav>
             <div className="absolute right-5 bottom-5 text-right">
                 BY BRIGITTE LEE &apos;25<br />
                 ALL RIGHTS RESERVED
