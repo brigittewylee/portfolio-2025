@@ -2,21 +2,22 @@ import React from "react";
 
 type ContactProps = {
   contactRef: React.RefObject<HTMLDivElement>;
+  footerRef: React.RefObject<HTMLDivElement>;
 };
 
-export default function Contact({contactRef}: ContactProps) {
+export default function Contact({contactRef, footerRef}: ContactProps) {
   return (
-    <div ref={contactRef}
-      className="font-[family-name:var(--font-arimo)] font-bold text-custom-white">
-        <hr className="h-px mx-auto w-[95%] align-center bg-custom-white mb-[4rem]"></hr>
-      <div className="text-9xl text-left fade-up pu-[5rem] pl-[2rem] fade-up">GET IN TOUCH:</div>
-      <div className="relative box-content h-[150px] w-full mr-2">
+    <div ref={contactRef} className="font-[family-name:var(--font-arimo)] font-bold text-custom-white">
+        <hr className="h-[2px] mx-auto w-[95%] align-center bg-custom-white mb-[4rem]"></hr>
+      <div className="relative box-content min-h-screen w-full mr-2">
+        <div className="text-9xl text-left fade-up pt-[5rem] pl-[2rem] fade-up">GET IN TOUCH:</div>
         <p className="pl-[2rem] text-xl text-left text-custom-white fade-up">
             I&apos;m always open to new ideas, collaborations, or any 
             other questions you may have—feel free to reach out!  <br />
         </p>
-        <div className="text-custom-white text-sm">
-            <div className="absolute left-5 bottom-5 flex gap-5">
+        <div className="flex text-custom-white text-sm">
+            <div ref={footerRef} 
+                className="absolute left-5 bottom-5 flex gap-5">
                 <a href="https://github.com/brigittewylee"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -42,7 +43,7 @@ export default function Contact({contactRef}: ContactProps) {
                   READ.CV [WIP]
                 </a>
             </div>
-            <a href="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.05]">
+            <a href="#landing" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.1]">
                 BACK TO TOP &#x2963;
             </a>
             <div className="absolute right-5 bottom-5 text-right">
