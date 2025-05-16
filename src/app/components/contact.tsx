@@ -8,10 +8,10 @@ type ContactProps = {
 export default function Contact({contactRef, footerRef}: ContactProps) {
   return (
     <div ref={contactRef} className="font-[family-name:var(--font-arimo)] font-bold text-custom-white">
-        <hr className="h-[2px] mx-auto w-[95%] align-center bg-custom-white mb-[4rem]"></hr>
-      <div className="relative box-content min-h-screen w-full mr-2">
-        <div className="text-9xl text-left fade-up pt-[5rem] pl-[2rem] fade-up">GET IN TOUCH:</div>
-        <p className="pl-[2rem] text-xl text-left text-custom-white fade-up">
+        <hr className="h-[2px] mx-auto w-[95%] align-center bg-custom-white mb-[1rem] fade-up"></hr>
+      <div className="relative box-content min-h-screen w-full mr-2 fade-up">
+        <p className="text-9xl text-left fade-up pt-[5rem] pl-[2rem]">GET IN TOUCH:</p>
+        <p className="pl-[2.5rem] text-xl text-left text-custom-white">
             I&apos;m always open to new ideas, collaborations, or any 
             other questions you may have—feel free to reach out!  <br />
         </p>

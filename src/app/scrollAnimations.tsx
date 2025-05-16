@@ -76,8 +76,7 @@ export default function ScrollAnimations() {
         },
       });
     });
-
-
+    
     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
   }, []);
 
