@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitType from "split-type";
-import Lenis from '@studio-freight/lenis'
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ScrollAnimations() {
@@ -37,7 +36,7 @@ export default function ScrollAnimations() {
           {
             scrollTrigger: {
               trigger: el,
-              start: "top 100%",
+              start: "top bottom",
               toggleActions: "play none none none",
               once: true,
             },
