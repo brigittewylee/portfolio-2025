@@ -44,7 +44,7 @@ export default function ScrollAnimations() {
             y: 0,
             duration: 1,
             ease: "power3.out",
-            delay: index * 0.09,
+            delay: index * 0.05,
           }
         );
       });
