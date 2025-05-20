@@ -21,7 +21,7 @@ export default function Work() {
         <div className="pr-70 text-[140px]/27 text-left fade-up">
           <p className="pt-70 pl-10">PROJECT</p>
           <p className="font-[family-name:var(--font-bodoni-moda)]">GALLERY</p>
-          <p className="text-7xl bg-black text-custom-white text-center">[under progress;;]</p>
+          <p className="text-4xl bg-black text-custom-white text-center">[[ongoing updates;;]]</p>
         </div>
 
         <div className="absolute pr-18 pb-66 rotate-90 text-[55px]/13 fade-up">

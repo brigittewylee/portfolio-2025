@@ -1,40 +1,26 @@
-import Image from 'next/image'; 
+import Image from 'next/image';
+import { useState } from 'react';
 
 export default function General() {
+	const [showImage, setShowImage] = useState(false);
 	return(
     <div>
-		<div className="flex pl-5 pr-5 w-auto overflow-hidden gap-1 rounded-xl">
-			<Image src="/images/holiday.JPG" 
-					alt="favourite holiday"
-					width={200}
-					height={400}
-					className="flex-1 fade-up">
-			</Image>
-			<Image src="/images/pottery.JPG"
-					alt="hobby"
-					width={200}
-					height={400}
-					className="flex-1 fade-up">
-			</Image>
-			<Image src="/images/season.JPG"
+		<div className="flex items-end fade-up"> 
+			<div className="text-[150px] font-bold flex-1 p-4 text-left">GENERAL</div>
+			<div className="text-[150px] font-bold flex-1 p-4 text-left cursor-pointer hover:animate-pulse"
+				onClick={() => setShowImage(!showImage)}>
+					 +
+			</div>			
+			<div className={`p-2 pb-20 transition-opacity duration-500 ${showImage ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+				<Image
+					src="/images/cherryblossem.JPG"
 					alt="season"
-					width={200}
-					height={400}
-					className="flex-1 fade-up">
-			</Image>
-			<Image src="/images/baking.JPG"
-					alt="hobby"
-					width={200}
-					height={400}
-					className="flex-1 fade-up">
-			</Image>
-
-
-		</div>
-        <section className="flex flex-col font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
-			<div className="text-[150px] flex-1 p-4 text-left fade-up">
-				GENERAL +
+					width={450}
+					height={500}
+				/>
 			</div>
+		</div>
+		<section className="flex flex-col font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
 			<div className="flex flex-row">
 				<div className="w-1/2"></div>
 				<div className="w-1/2 text-[25.6px]/7">
