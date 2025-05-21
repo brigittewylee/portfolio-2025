@@ -21,7 +21,6 @@ export default function Work() {
         <div className="pr-70 text-[140px]/27 text-left fade-up">
           <p className="pt-70 pl-10">PROJECT</p>
           <p className="font-[family-name:var(--font-bodoni-moda)]">GALLERY</p>
-          <p className="text-4xl bg-black text-custom-white text-center">[[ongoing updates;;]]</p>
         </div>
 
         <div className="absolute pr-18 pb-66 rotate-90 text-[55px]/13 fade-up">
@@ -80,7 +79,10 @@ export default function Work() {
           </div>
 
           <div className="relative box-content bg-black border border-outline-black h-[450px] w-[320px] mr-2">
-            <p className="absolute bottom-10 left-10 text-custom-white text-[20px] cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.05] hover:drop-shadow-[0px_0px_2.5px_rgba(236,236,236,1)]">
+            <a href="https://github.com/brigittewylee/rPPG-smartmirror"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="absolute bottom-10 left-10 text-custom-white text-[20px] cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.05] hover:drop-shadow-[0px_0px_2.5px_rgba(236,236,236,1)]">
               REMOTE <br />
               PHOTOPLETHY-<br />
               SMOGRAPHY <br />
@@ -88,19 +90,22 @@ export default function Work() {
               FOR VITAL <br />
               MONITORING <br />
               (ONGOING)<br />
-            </p>
+            </a>
           </div>
 
           <div className="relative box-content bg-black border border-outline-black h-[450px] w-[320px] mr-2">
             <span className="absolute font-[family-name:var(--font-bodoni-moda)] top-[-230] right-[-120]"> + </span>
             <span className="absolute font-[family-name:var(--font-bodoni-moda)] bottom-[-230] right-[-120]"> + </span>
-            <p className="absolute bottom-10 left-10 text-custom-white text-[20px] cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.05] hover:drop-shadow-[0px_0px_2.5px_rgba(236,236,236,1)]">
+            <a href="https://github.com/brigittewylee/Synthetic-Data-Generation-Evaluation" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="absolute bottom-10 left-10 text-custom-white text-[20px] cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.05] hover:drop-shadow-[0px_0px_2.5px_rgba(236,236,236,1)]">
               TOWARDS A <br />
               PILOT FRAMEWORK <br />
               FOR SYNTHETIC <br />
               HEALTH DATA <br />
               GENERATION <br />
-            </p>
+            </a>
           </div>
         </div>
       </div>
