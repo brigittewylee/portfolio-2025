@@ -15,7 +15,7 @@ export default function General() {
 
 		<section className="font-[family-name:var(--font-arimo)] font-bold ">
 			<div className="flex flex-row">
-				<div className={`w-2/3 flex justify-end p-2 transition-opacity duration-500 ${showImage ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+				<div className={`w-3/5 flex justify-end p-2 pr-5 transition-opacity duration-500 ${showImage ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
 				<Image
 					src="/images/cherryblossem.JPG"
 					alt="season"
@@ -39,11 +39,12 @@ export default function General() {
 						<p className="pb-8">DESIGN BECOMES A WAY TO SOLVE. </p>
 					</div>
 					<div className="fade-up text-left">
-						<p>HEALTH AND TECHNOLOGY ARE  </p>
-						<p>DRIVERS TO A FUTURE OF POSITIVE </p>
-						<p>CHANGE. THEIR OVERLAP IS WHERE  </p>
-						<p>WE BEGIN TO<span className="font-bold"> DESIGN SOLUTIONS</span> </p> 
-						<p className="text-left font-bold"> THAT CARE AS MUCH AS THEY INNOVATE.</p>
+						<p>TO ME, HEALTH AND TECHNOLOGY   </p>
+						<p>ARE DRIVERS TO A FUTURE OF </p>
+						<p>POSITIVE CHANGE. THEIR OVERLAP </p>
+						<p>IS WHERE WE BEGIN TO<span className="font-bold"> DESIGN </span> </p> 
+						<p className="italic font-bold"> SOLUTIONS THAT CARE AS MUCH </p>
+						<p>AS THEY INNOVATE.</p>
 					</div>
 				</div>
 			</div>
