@@ -4,10 +4,10 @@ import gsap from "gsap";
 type CursorProps = {
   headerRef: React.RefObject<HTMLDivElement>;
   footerRef: React.RefObject<HTMLDivElement>;
-  variant?: "default" | "alt";
+  headerVariant?: "default" | "alt";
 };
 
-export default function Cursor({headerRef, footerRef}: CursorProps) {
+export default function Cursor({headerRef, footerRef, headerVariant}: CursorProps) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const cursorRef = useRef<HTMLDivElement>(null);
   const baseScale = useRef(1);
@@ -65,14 +65,19 @@ export default function Cursor({headerRef, footerRef}: CursorProps) {
         e.clientX >= footerRect.left &&
         e.clientX <= footerRect.right;
 
-      console.log({ inHeader, inFooter });
       if (inHeader) {
         baseScale.current = 0.3;
+        const computedStyle = headerRef.current ? window.getComputedStyle(headerRef.current) : null;
+        const bgColor = computedStyle?.backgroundColor || "";
+        const isHeaderBlack = bgColor.includes("0, 0, 0"); 
+        console.log("Header detected — is black?", isHeaderBlack);
+
+      
         gsap.to(cursorRef.current, {
-          scale: 0.3, 
+          scale: 0.3,
           duration: 0.3,
           backgroundColor: "rgba(0,0,0,0)",
-          borderColor: "rgb(0,0,0)",
+          borderColor: isHeaderBlack ? "#ffffff" : "#000000",
           borderWidth: "4px",
         });
       } else if (inFooter) {
@@ -105,12 +110,17 @@ export default function Cursor({headerRef, footerRef}: CursorProps) {
 		document.removeEventListener("mousedown", click);
     document.removeEventListener("mousemove", handleHover);
 		};
-	}, [headerRef, footerRef]);
+	}, [headerRef, footerRef, headerVariant]);
 
   return (
     <div
 		ref={cursorRef}
-		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999] border border-2 border-custom-white bg-black">
+		className="fixed w-7 h-7 rounded-full pointer-events-none z-[9999]"
+    style={{
+      backgroundColor: "black",
+      border: "2px solid #ececec",
+      boxSizing: "border-box"
+    }}>
     </div>
   );
 }

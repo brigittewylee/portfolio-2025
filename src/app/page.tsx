@@ -21,7 +21,6 @@ export default function HomePage() {
 
   useEffect(() => {
     const lenis = new Lenis({
-      smooth: true,
       lerp: 0.1,
     })
 
