@@ -60,10 +60,10 @@ export default function Work() {
               <p>USER INTERFACE</p>
               <p>AND DESIGN//</p>
             </div>
-        </div>
-
+          </div>
         </div>
       </div>
+      
       <div className="mt-30 mb-30 border-outline-black fade-up">
         <div className="flex justify-center font-[family-name:var(--font-arimo)] font-thin not-italic text-[250px]">
           <div className="relative box-content overflow-visible bg-black border border-outline-black h-[450px] w-[320px] mr-2">
