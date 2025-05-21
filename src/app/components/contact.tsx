@@ -60,7 +60,7 @@ export default function Contact({contactRef, footerRef}: ContactProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">
-                  READ.CV [WIP]
+                  CV
                 </a>
             </div>
             <nav>

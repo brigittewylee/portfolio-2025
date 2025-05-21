@@ -39,7 +39,7 @@ export default function Header({headerRef, variant="default"}: HeaderProps) {
         className={`fixed top-0 w-full h-23 z-50 transition-all duration-500 backdrop-blur-3xl
         [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0.8)_35%,transparent)] [mask-size:100%_100%]
         ${bgColor} ${textColor}`}>
-		<section className="flex text-m font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
+		<section className="flex font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
 			<div className="w-1/2 p-4 text-left gap-1 fade-up">
 				<p>brigittelee &apos;25</p>
       </div>
