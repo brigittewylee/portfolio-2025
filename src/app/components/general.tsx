@@ -7,7 +7,7 @@ export default function General() {
     <div>
 		<div className="flex justify-start fade-up w-full"> 
 			<div className="text-[150px] font-bold p-4 text-left">GENERAL</div>
-			<div className={`text-[150px] font-bold p-4 text-left cursor-pointer cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.1] transition-all ${!showImage ? 'animate-pulse' : ''}`}
+			<div className={`text-[150px] font-bold p-4 text-left cursor-pointer cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.25] transition-all ${!showImage ? 'animate-pulse' : ''}`}
 				onClick={() => setShowImage(!showImage)}>
 					 +
 			</div>			
@@ -17,7 +17,7 @@ export default function General() {
 			<div className="flex flex-row">
 				<div className={`w-3/5 flex justify-end p-2 pr-5 transition-opacity duration-500 ${showImage ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
 				<Image
-					src="/images/cherryblossem.JPG"
+					src="/images/cherryblossom.JPG"
 					alt="season"
 					width={490}
 					height={500}
