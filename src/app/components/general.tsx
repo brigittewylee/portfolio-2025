@@ -7,7 +7,7 @@ export default function General() {
     <div>
 		<div className="flex justify-start fade-up w-full"> 
 			<div className="text-[150px] font-bold p-4 text-left">GENERAL</div>
-			<div className={`text-[150px] font-bold p-4 text-left cursor-pointer cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.25] transition-all ${!showImage ? 'animate-pulse' : ''}`}
+			<div className={`text-[150px] font-bold p-4 text-left cursor-pointer cursor-pointer transition-transform duration-[600ms] ease-in-out hover:scale-[1.25] hover:rotate-180 transition-all ${!showImage ? 'animate-pulse' : ''}`}
 				onClick={() => setShowImage(!showImage)}>
 					 +
 			</div>			
