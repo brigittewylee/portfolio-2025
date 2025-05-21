@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Arimo } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Bodoni_Moda, Bodoni_Moda_SC } from "next/font/google";
-import { Urbanist } from "next/font/google";
-
-
 
 import "./globals.css";
 
@@ -34,10 +31,6 @@ const bodoniModaSC = Bodoni_Moda_SC({
   subsets: ["latin"],
 });
 
-const urbanist = Urbanist({
-  variable: "--font-urbanist",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -54,7 +47,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} 
         ${bodoniModa.variable} ${bodoniModaSC.variable} ${arimo.variable}
-        ${urbanist.variable} 
         antialiased`}
       >
         {children}
