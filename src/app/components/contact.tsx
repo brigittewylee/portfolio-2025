@@ -24,6 +24,11 @@ export default function Contact({contactRef, footerRef}: ContactProps) {
         ease: "power2.out",
       });
     };
+    
+    button.addEventListener("click", handleClick);
+    return () => {
+      button.removeEventListener("click", handleClick);
+    };
   });
 
   return (
