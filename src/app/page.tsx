@@ -62,7 +62,7 @@ export default function HomePage() {
 
   return (
     <div className="scroll-smooth">
-
+    <SpeedInsights />
     <Head>
       <title>Brigitte Lee – Portfolio 2025</title>
       <meta name="description" content="Creative portfolio of Brigitte Lee." />
