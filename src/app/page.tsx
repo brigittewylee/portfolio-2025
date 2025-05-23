@@ -9,6 +9,8 @@ import Contact from "./components/contact";
 import Cursor from "./components/cursor";
 import ScrollAnimations from "./scrollAnimations";
 import Lenis from '@studio-freight/lenis'
+import Head from 'next/head';
+
 
 export default function HomePage() {
   const headerRef = useRef<HTMLDivElement>(null); 
@@ -59,6 +61,12 @@ export default function HomePage() {
 
   return (
     <div className="scroll-smooth">
+
+    <Head>
+      <title>Brigitte Lee – Portfolio 2025</title>
+      <meta name="description" content="Creative portfolio of Brigitte Lee." />
+    </Head>
+
       <Cursor headerRef={headerRef} footerRef={footerRef}/>
       <ScrollAnimations />
 
