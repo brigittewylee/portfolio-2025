@@ -9,7 +9,6 @@ import Contact from "./components/contact";
 import Cursor from "./components/cursor";
 import ScrollAnimations from "./scrollAnimations";
 import Lenis from '@studio-freight/lenis'
-import Head from 'next/head';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
@@ -36,6 +35,7 @@ export default function HomePage() {
   }, [])
 
   useEffect(() => { 
+    document.title = 'Brigitte Lee';
     function onScroll() {
       if (!designRef.current || !contactRef.current) return;
 
@@ -63,10 +63,6 @@ export default function HomePage() {
   return (
     <div className="scroll-smooth">
     <SpeedInsights />
-    <Head>
-      <title>Brigitte Lee – Portfolio 2025</title>
-      <meta name="description" content="Creative portfolio of Brigitte Lee." />
-    </Head>
 
       <Cursor headerRef={headerRef} footerRef={footerRef}/>
       <ScrollAnimations />
