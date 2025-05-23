@@ -35,11 +35,15 @@ export default function Contact({contactRef, footerRef}: ContactProps) {
     <div ref={contactRef} className="font-[family-name:var(--font-arimo)] font-bold text-custom-white">
         <hr className="h-[2px] mx-auto w-[95%] align-center bg-custom-white mb-[1rem] fade-up"></hr>
       <div className="relative box-content min-h-screen w-full mr-2 fade-up">
-        <p className="text-9xl text-left fade-up pt-[5rem] pl-[2rem]">GET IN TOUCH:</p>
-        <p className="pl-[2.5rem] text-xl text-left text-custom-white">
-            I&apos;m always open to new ideas, collaborations, or any 
-            other questions you may have—feel free to reach out!  <br />
-        </p>
+        <p className="text-[180px]/60 text-center fade-up pt-[2rem] pl-[2rem]">GET IN TOUCH:</p>
+        <div>
+          <p className="pl-[7rem] text-xl text-left text-custom-white">
+              Let&apos;s make something <span className="italic animate-text">meaningful. <br /></span>
+              I&apos;m always open to new ideas, collaborations, <br /> or any 
+              other questions you may have <br /> 
+              —feel free to reach out and connect!  <br />
+          </p>
+        </div>
         <div className="flex text-custom-white text-sm">
             <div ref={footerRef} 
                 className="absolute left-5 bottom-5 flex gap-5">
@@ -61,7 +65,7 @@ export default function Contact({contactRef, footerRef}: ContactProps) {
                   className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">
                   EMAIL
                 </a>
-                <a href="PLACEHOLDER"
+                <a href="https://drive.google.com/uc?export=download&id=1yAhaWZzwLmpE0raWdPMV77o21EXll7TC" download
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative inline-block cursor-pointer after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] after:bg-custom-white after:transition-all after:duration-300 hover:after:w-full">
