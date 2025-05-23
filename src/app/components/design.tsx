@@ -1,8 +1,8 @@
 import React from "react";
 
 type DesignProp = {
-  designRef: React.RefObject<HTMLDivElement>
-  designHeadRef: React.RefObject<HTMLDivElement>
+  designRef: React.RefObject<HTMLDivElement | null>
+  designHeadRef: React.RefObject<HTMLDivElement | null>
 };
 
 export default function Design({ designRef, designHeadRef }: DesignProp) {

@@ -5,8 +5,8 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 
 type ContactProps = {
-  contactRef: React.RefObject<HTMLDivElement>;
-  footerRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement | null>;
+  footerRef: React.RefObject<HTMLDivElement | null>;
 };
 
 export default function Contact({contactRef, footerRef}: ContactProps) {

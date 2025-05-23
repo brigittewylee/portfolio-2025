@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 type CursorProps = {
-  headerRef: React.RefObject<HTMLDivElement>;
-  footerRef: React.RefObject<HTMLDivElement>;
+  headerRef: React.RefObject<HTMLDivElement | null>;
+  footerRef: React.RefObject<HTMLDivElement | null>;
   headerVariant?: "default" | "alt";
 };
 

@@ -1,5 +1,3 @@
-
-
 export default function Work() {
   return (
     <div className="italic font-bold w-full overflow-hidden fade-up">

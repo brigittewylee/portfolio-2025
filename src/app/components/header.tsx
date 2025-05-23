@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 
 type HeaderProps = {
-  headerRef: React.RefObject<HTMLDivElement>;
+  headerRef: React.RefObject<HTMLDivElement | null>;
   variant?: "default" | "alt";
 };
 

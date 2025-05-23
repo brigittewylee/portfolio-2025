@@ -24,9 +24,9 @@ export default function HomePage() {
       lerp: 0.1,
     })
 
-    function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
+    function raf(time: DOMHighResTimeStamp) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
     }
 
     requestAnimationFrame(raf)
@@ -37,7 +37,7 @@ export default function HomePage() {
       if (!designRef.current || !contactRef.current) return;
 
       const designTop = designRef.current.getBoundingClientRect().top;
-      const designHeadHeight = designHeadRef.current.offsetHeight;
+      const designHeadHeight = designHeadRef.current ? designHeadRef.current.offsetHeight : 0;
       const contactTop = contactRef.current.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
       const adjustedDesignTop = designTop + designHeadHeight;
@@ -59,7 +59,7 @@ export default function HomePage() {
 
   return (
     <div className="scroll-smooth">
-      <Cursor headerRef={headerRef} variant={useAltHeader ? "alt" : "default"} contactRef={contactRef} footerRef={footerRef}/>
+      <Cursor headerRef={headerRef} footerRef={footerRef}/>
       <ScrollAnimations />
 
       <div>
