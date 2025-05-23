@@ -10,6 +10,7 @@ import Cursor from "./components/cursor";
 import ScrollAnimations from "./scrollAnimations";
 import Lenis from '@studio-freight/lenis'
 import Head from 'next/head';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 export default function HomePage() {
