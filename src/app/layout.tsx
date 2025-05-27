@@ -33,7 +33,7 @@ const bodoniModaSC = Bodoni_Moda_SC({
 
 
 export const metadata: Metadata = {
-  title: "Brigitte Lee",
+  title: "Brigitte Lee - Designer/Developer",
   description: "Brigitte Lee's Creative Portfolio 2025",
 };
 

@@ -44,13 +44,13 @@ const Clock = () => {
           }
         }
       `}</style>
-      <div className="font-arimo flex items-baseline gap-0">
+      <div className="font-arimo gap-0 text-xs md:text-lg sm:text-xs">
         <span>
           {hours}
-          <span className="colon">:</span>
+          <span className="colon text-xs md:text-lg sm:text-xs">:</span>
           {minutes}
         </span>
-        <span className="text-base">{ampm}</span>
+        <span className="text-base text-xs md:text-lg sm:text-xs">{ampm}</span>
       </div>
     </div>
   );
