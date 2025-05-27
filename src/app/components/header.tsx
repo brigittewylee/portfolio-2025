@@ -39,12 +39,12 @@ export default function Header({headerRef, variant="default"}: HeaderProps) {
         className={`fixed top-0 w-full h-[11vh] z-50 transition-all duration-500 backdrop-blur-3xl
         [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0.8)_35%,transparent)] [mask-size:100%_100%]
         ${bgColor} ${textColor}`}>
-		<section className="flex w-screen max-w-screen overflow-x-hidden justify-center font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
+		<section className="flex w-full overflow-x-hidden justify-center font-[family-name:var(--font-arimo)] font-bold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)]">
 			<div className="w-1/2 p-4 text-left gap-1 text-xs md:text-lg sm:text-xs fade-up">
 				<p>brigittelee &apos;25</p>
       </div>
-        <div className="w-1/2 flex p-4 gap-30 z-[999] justify-end items-baseline text-xs md:text-lg sm:text-xs">
-          <nav className="flex flex-nowrap w-screen max-w-screen  gap-0 fade-up whitespace-nowrap">
+        <div className="w-1/2 flex p-4 gap-30 z-[999] text-right items-baseline text-xs md:text-lg sm:text-xs">
+          <nav className="flex flex-nowrap w-full gap-0 fade-up whitespace-nowrap">
               <button data-target="#work"
                 className={`relative inline-block after:absolute after:left-0 after:top-[95%] after:w-0 after:h-[2px] ${underlineColor} after:transition-all after:duration-300 hover:after:w-full`}>
                 work
@@ -61,7 +61,7 @@ export default function Header({headerRef, variant="default"}: HeaderProps) {
               </button>
           </nav>
           <div className="flex gap-1 justify-center fade-up">
-            <p>toronto,on</p><Clock />
+            <p>toronto,on</p><Clock/>
           </div>
         </div>
     </section>
