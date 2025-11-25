@@ -25,7 +25,7 @@ export default function General() {
 				</div>
 				<div className="text-[25.6px]/7 p-1 text-right font-semibold drop-shadow-[0px_0px_0.9px_rgba(0,0,0,1)] fade-up">
 					<div className="fade-up text-left">
-						<p>I&apos;M BRIGITTE, A MSC HEALTH SCI </p>
+						<p>I&apos;M BRIGITTE, A MMATH CS </p>
 						<p> STUDENT AT THE UNIVERSITY OF  </p>
 						<p>WATERLOO. MY WORK LIVES AT THE </p>
 						<p><span className="font-bold italic"> INTERSECTION </span> OF SCIENCE, DESIGN</p>
@@ -43,8 +43,8 @@ export default function General() {
 						<p>ARE DRIVERS TO A FUTURE OF </p>
 						<p>POSITIVE CHANGE. THEIR OVERLAP </p>
 						<p>IS WHERE WE BEGIN TO<span className="font-bold"> DESIGN </span> </p> 
-						<p className="italic font-bold"> SOLUTIONS THAT CARE AS MUCH </p>
-						<p>AS THEY INNOVATE.</p>
+						<p className="font-bold"> SOLUTIONS THAT CARE AS MUCH </p>
+						<p className="font-bold"> AS THEY INNOVATE.</p>
 					</div>
 				</div>
 			</div>
